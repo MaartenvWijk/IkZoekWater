@@ -20,6 +20,7 @@ p {
     max-width: 700px;
     text-align: justify;
     text-align-last: center;
+    margin: 0 auto;
 }
 
 
@@ -37,7 +38,7 @@ html {
 #top {
     background: url("../img/mainimg.jpg") no-repeat;
     background-size: cover;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 #flavour {
@@ -68,7 +69,8 @@ html {
 
 #map {
     height: 800px;
-    width: 99vw;
+    width: 98vw;
+    margin: 0 auto;
 }
 
 #quote {
@@ -82,6 +84,7 @@ html {
 
 #mail {
     background: url("../img/duif.jpg");
+    background-size: cover;
     height: 300px;
     padding: 300px 0 200px;
 }
@@ -107,7 +110,7 @@ html {
 }
 
 .knop:active {
-    transform: scale(.9);
+    transform: scale(.98);
 }
 
 form {
@@ -153,13 +156,31 @@ footer img{
     font-weight: 900;
 }
 
-@media (max-width: 1231px) {
+@media (max-width: 1536px) {
     .bottom {
         align-content: center;
     }
 
     .bottom article {
-        flex-basis: inherit;
         margin: 0 auto;
+        padding-bottom: 10px;
+    }
+
+    #flavour {
+        padding-top: 100px;
+    }
+
+    .knop {
+        margin: 40px auto;
+    }
+
+    #top {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 830px) {
+    #map {
+        width: 97vw;
     }
 }
