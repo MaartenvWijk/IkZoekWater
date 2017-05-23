@@ -17,7 +17,7 @@ h3 {
 }
 
 p {
-    width: 700px;
+    max-width: 700px;
     text-align: justify;
     text-align-last: center;
 }
@@ -55,7 +55,7 @@ html {
 }
 
 .bottom article {
-    padding: 150px;
+    padding: 100px 50px;
     flex-basis: 50%;
     box-sizing: border-box;
 }
@@ -107,7 +107,7 @@ html {
 }
 
 .knop:active {
-    margin: 1px 1px 0;
+    transform: scale(.9);
 }
 
 form {
@@ -151,4 +151,15 @@ footer img{
     text-align: center;
     color: black;
     font-weight: 900;
+}
+
+@media (max-width: 1231px) {
+    .bottom {
+        align-content: center;
+    }
+
+    .bottom article {
+        flex-basis: inherit;
+        margin: 0 auto;
+    }
 }
